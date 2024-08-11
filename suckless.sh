@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S --needed gcr webkit2
+sudo pacman -S --needed --disable-download-timeout gcr webkit2
 
 chmod +x alias.sh
 chmod +x inbr.sh
