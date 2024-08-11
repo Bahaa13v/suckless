@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -S --needed gcr webkit2
+
 chmod +x alias.sh
 chmod +x inbr.sh
 chmod +x dcbr.sh
@@ -11,6 +13,7 @@ cp -r inbr.sh /home/bahaa/scripts/
 cp -r dcbr.sh /home/bahaa/scripts/
 
 cp -r xinitrc /home/bahaa/.xinitrc
+echo "alias x=startx" >> /home/bahaa/.zshrc
 
 cd dwm
 sudo make clean install
